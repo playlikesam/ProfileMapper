@@ -1,54 +1,13 @@
 # React + TypeScript + Vite
+To implement the Profile Mapper application, we created reusable components like ProfileCard, ProfileList, and ProfileMap, and set up routing for pages such as Home, Admin, and ProfileDetails. We defined the Profile type to structure the profile data, which includes name, photo, description, and geographical location. The Home page displays a list of profiles, and users can click the "Summary" button to navigate to the ProfileDetails page, where the profile's location is displayed interactively on a Google Map. We integrated React Router for navigation and used Material UI for UI components.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What's left:
+we need to integrate Mapbox or Google Maps for the map functionality (API key configuration).
 
-Currently, two official plugins are available:
+Implement admin functionality for adding, editing, and deleting profiles in the Admin page.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Add Search and Filter functionality for users to find profiles based on different criteria.
 
-## Expanding the ESLint configuration
+Finalize Error Handling and Loading Indicators for smooth user experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Ensure the application is responsive for mobile users.
