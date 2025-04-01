@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { profiles } from "../data/Profiles";
-import { Container, Typography, Button, Card, CardContent, CardMedia } from "@mui/material";
+import { Container, Typography, Card, CardContent, CardMedia } from "@mui/material";
 import ProfileMap from "../components/ProfileMap";
 
 const ProfileDetails: React.FC = () => {

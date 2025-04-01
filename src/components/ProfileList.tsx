@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileCard from "./ProfileCard";
-import { profiles } from "../data/profiles";
+import { profiles } from "../data/Profiles";
 
 interface ProfileListProps {
   onProfileSelect: (id: number) => void;
